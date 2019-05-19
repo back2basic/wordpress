@@ -52,8 +52,8 @@ services:
                 traefik.docker.network: "Proxy"
 
     wordpress:
-        build: ..
-       #image: back2basic/wordpress  
+        #build: ..
+        image: back2basic/wordpress  
         volumes:
             - ./wordpress:/var/www/html
         environment:
